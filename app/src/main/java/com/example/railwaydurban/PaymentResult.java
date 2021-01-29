@@ -19,15 +19,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 public class PaymentResult extends AppCompatActivity {
 
@@ -125,7 +125,7 @@ public class PaymentResult extends AppCompatActivity {
         textViewId.setText(jsonDetails.getString("id"));
         textViewStatus.setText(jsonDetails.getString("state"));
         status=jsonDetails.getString("state");
-        //TODO Test
+
         if (textViewStatus.getText().toString().contains(" "))
         {
             // disable boarding pass button id state is not approved
