@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E6F1"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".PaymentResult">
+
+    <Button
+        android:id="@+id/buttonPDF"
+        android:layout_width="231dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:background="#091455"
+        android:text="Download Boarding Pass"
+        android:textAllCaps="false"
+        android:textColor="#F4EFEF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:background="#091455"
+        android:text="Back to Schedule"
+        android:textAllCaps="false"
+        android:textColor="#F4EFEF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="401dp"
+        android:layout_height="78dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/paymentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Id : "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/paymentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
