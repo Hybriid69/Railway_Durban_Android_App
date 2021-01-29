@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Properties;
@@ -23,8 +25,6 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class Forgot_Password extends AppCompatActivity {
     private TextInputEditText resetemail;
@@ -145,7 +145,7 @@ public class Forgot_Password extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             final String username = "farmworks69@gmail.com";
-            final String password = "farmerbrown1";
+            final String password = ""; //Insert Password
 
             Properties props = new Properties();
             props.put("mail.smtp.starttls.enable", "true");
